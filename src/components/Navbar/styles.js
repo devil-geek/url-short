@@ -21,7 +21,7 @@ export const Menu = styled.div`
     padding: 2rem 0 2rem 4rem;
     text-decoration: none;
     &:hover {
-      color: hsl(0, 0%, 75%);
+      color: #000;
     }
   }
 `
@@ -35,10 +35,10 @@ export const Sign = styled.div`
   a {
     font-weight: 700;
     color: hsl(257, 7%, 63%);
-    padding: 2rem;
+    padding: 2rem 4rem 2rem 0;
     text-decoration: none;
     &:hover {
-      color: hsl(0, 0%, 75%);
+      color: #000;
     }
   }
 `

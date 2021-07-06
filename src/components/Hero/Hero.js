@@ -1,17 +1,20 @@
 import React from "react"
-
+import { Container } from "../../shared/styles"
+import { StyledHero, LargeButton } from "./styles"
 const Hero = () => {
   return (
-    <div>
-      <h1>More than just shorter links</h1>
+    <StyledHero>
+      <Container>
+        <h1>More than just shorter links</h1>
 
-      <h4>
-        Build your brand’s recognition and get detailed insights on how your
-        links are performing.
-      </h4>
+        <h3>
+          Build your brand’s recognition and get detailed insights on how your
+          links are performing.
+        </h3>
 
-      <button>Get Started</button>
-    </div>
+        <LargeButton>Get Started</LargeButton>
+      </Container>
+    </StyledHero>
   )
 }
 

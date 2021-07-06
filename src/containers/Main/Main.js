@@ -9,10 +9,8 @@ const Main = () => {
   return (
     <main>
       <Navbar />
-      <section>
-        <Hero />
-        <Shortener />
-      </section>
+      <Hero />
+      <Shortener />
       <section>
         <Statics />
       </section>
