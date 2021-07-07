@@ -1,6 +1,6 @@
 import React from "react"
-import { Container } from "../../shared/styles"
-import { StyledHero, LargeButton } from "./styles"
+import { Container, LargeButton } from "../../shared/styles"
+import { StyledHero } from "./styles"
 const Hero = () => {
   return (
     <StyledHero>

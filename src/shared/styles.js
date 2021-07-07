@@ -7,7 +7,6 @@ export const Container = styled.div`
 `
 
 export const Button = styled.button`
-  border: none;
   outline: none;
   font-weight: 700;
   font-size: 1.8rem;
@@ -15,5 +14,13 @@ export const Button = styled.button`
   padding: 1.2rem 2.4rem;
   border-radius: 5rem;
   background: hsl(180, 66%, 49%);
+  border: 1px solid hsl(180, 66%, 39%);
   cursor: pointer;
+  text-rendering: optimizeLegibility;
+`
+
+export const LargeButton = styled(Button)`
+  padding: 1.8rem 4rem;
+  font-size: 2.3rem;
+  margin: 4rem 0;
 `

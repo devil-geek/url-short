@@ -1,6 +1,5 @@
 import styled from "@emotion/styled"
 import background from "../../images/illustration-working.svg"
-import { Button } from "../../shared/styles"
 
 export const StyledHero = styled.section`
   background: #fff url(${background}) no-repeat right top;
@@ -10,21 +9,15 @@ export const StyledHero = styled.section`
 
   h1 {
     font-size: 8rem;
-    max-width: 600px;
+    max-width: 60rem;
     line-height: 8rem;
     margin-bottom: 1rem;
   }
 
   h3 {
-    font-size: 2.1rem;
-    max-width: 510px;
+    font-size: 2.3rem;
+    max-width: 55rem;
     color: hsl(257, 7%, 63%);
-    font-weight: 300;
+    font-weight: 400;
   }
-`
-
-export const LargeButton = styled(Button)`
-  padding: 1.8rem 4rem;
-  font-size: 2.1rem;
-  margin: 4rem 0;
 `
