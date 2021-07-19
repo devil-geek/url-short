@@ -11,12 +11,8 @@ const Main = () => {
       <Navbar />
       <Hero />
       <Shortener />
-      <section>
-        <Statics />
-      </section>
-      <section>
-        <Boost />
-      </section>
+      <Statics />
+      <Boost />
     </main>
   )
 }
