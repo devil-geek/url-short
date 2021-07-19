@@ -50,7 +50,7 @@ export const ShortLinkContainer = styled.div`
   border-radius: 0.5rem;
   font-size: 2.2rem;
   line-height: 2.2rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0 0;
 `
 
 export const OriginalLink = styled.span`
@@ -70,5 +70,14 @@ export const ShortLink = styled.span`
 export const CopyButton = styled(Button)`
   border-radius: 0.5rem;
   width: 12rem;
-  margin-left: 3rem;
+  margin: 1.6rem 0 1.6rem 3rem;
+`
+
+export const ShortenerWrapper = styled.section`
+  background: linear-gradient(
+    #fff 0,
+    #fff 100px,
+    hsl(218, 31%, 95%) 100px,
+    hsl(218, 31%, 95%) 100%
+  );
 `
