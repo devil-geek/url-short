@@ -1,4 +1,28 @@
 import styled from "@emotion/styled"
+import { css } from "@emotion/react"
+
+export const globalStyles = css`
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  html {
+    /* this defines 1rem is */
+    font-size: 62.5%;
+  }
+
+  body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+  }
+`
 
 export const Container = styled.div`
   width: 100%;
