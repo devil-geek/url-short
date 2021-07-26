@@ -22,6 +22,14 @@ export const globalStyles = css`
     font-size: 1.8rem;
     font-family: "Poppins", sans-serif;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: hsl(260, 8%, 14%);
+  }
 `
 
 export const Container = styled.div`
@@ -38,9 +46,14 @@ export const Button = styled.button`
   padding: 1.2rem 2.4rem;
   border-radius: 5rem;
   background: hsl(180, 66%, 49%);
-  border: 1px solid hsl(180, 66%, 39%);
+  border: 1px solid hsl(180, 66%, 49%);
   cursor: pointer;
   text-rendering: optimizeLegibility;
+  transition: all 0.3s;
+  &:hover {
+    background: hsl(180, 66%, 65%);
+    border: 1px solid hsl(180, 66%, 50%);
+  }
 `
 
 export const LargeButton = styled(Button)`

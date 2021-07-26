@@ -18,10 +18,15 @@ export const Menu = styled.div`
   a {
     font-weight: 700;
     color: hsl(257, 7%, 63%);
-    padding: 2rem 0 2rem 4rem;
+    margin: 2rem;
+    padding: 0.5rem;
     text-decoration: none;
+    transition: color 0.3s;
     &:hover {
-      color: #000;
+      color: hsl(260, 8%, 14%);
+    }
+    &:nth-of-type(1) {
+      margin-left: 4rem;
     }
   }
 `
@@ -35,10 +40,12 @@ export const Sign = styled.div`
   a {
     font-weight: 700;
     color: hsl(257, 7%, 63%);
-    padding: 2rem 4rem 2rem 0;
+    margin: 2rem 3.5rem;
+    padding: 0.5rem;
     text-decoration: none;
+    transition: color 0.3s;
     &:hover {
-      color: #000;
+      color: hsl(260, 8%, 14%);
     }
   }
 `

@@ -15,6 +15,7 @@ export const StyledFooter = styled.footer`
     padding: 0.2rem 0;
     margin: 0.5rem 0;
     cursor: pointer;
+    transition: color 0.3s;
     &:hover {
       color: hsl(180, 66%, 49%);
     }
