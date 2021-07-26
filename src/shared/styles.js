@@ -54,10 +54,16 @@ export const Button = styled.button`
     background: hsl(180, 66%, 65%);
     border: 1px solid hsl(180, 66%, 50%);
   }
+  &:disabled {
+    background: hsl(260, 8%, 14%);
+    border: 1px solid hsl(260, 8%, 14%);
+    cursor: not-allowed;
+  }
 `
 
 export const LargeButton = styled(Button)`
   padding: 1.8rem 4rem;
   font-size: 2.3rem;
   margin: 4rem 0;
+  width: 22.5rem;
 `

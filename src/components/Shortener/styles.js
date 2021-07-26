@@ -14,6 +14,7 @@ export const StyledShortener = styled.div`
   display: flex;
   align-items: center;
   padding: 0 6rem;
+  position: relative;
 `
 
 export const RectButton = styled(LargeButton)`
@@ -34,7 +35,11 @@ export const Input = styled.input`
   padding: 0 3.5rem;
   font-family: "Poppins", sans-serif;
   outline: none;
-  border: 0.4rem solid transparent;
+  border: ${(props) =>
+    props.error
+      ? "0.4rem solid hsl(0, 87%, 67%);"
+      : "0.4rem solid transparent;"};
+
   &:focus {
     transition: all 0.3s;
     border: 0.4rem solid hsl(180, 66%, 49%);
@@ -49,7 +54,6 @@ export const ShortLinkContainer = styled.div`
   padding: 0 3rem;
   border-radius: 0.5rem;
   font-size: 2.2rem;
-  line-height: 2.2rem;
   margin: 1.5rem 0 0;
 `
 
@@ -60,11 +64,13 @@ export const OriginalLink = styled.span`
   overflow: hidden;
   text-overflow: ellipsis;
   padding-right: 5rem;
+  height: 3rem;
 `
 export const ShortLink = styled.span`
   display: flex;
   justify-content: flex-end;
   color: hsl(180, 66%, 49%);
+  height: 3rem;
 `
 
 export const CopyButton = styled(Button)`
@@ -80,4 +86,12 @@ export const ShortenerWrapper = styled.section`
     hsl(218, 31%, 95%) 100px,
     hsl(218, 31%, 95%) 100%
   );
+`
+
+export const StyledError = styled.p`
+  color: hsl(0, 87%, 67%);
+  font-style: italic;
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 2rem;
 `
