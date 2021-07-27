@@ -8,6 +8,12 @@ export const StyledNavbar = styled.nav`
   min-height: 5rem;
   max-width: 144rem;
   margin: 2.5rem auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  @media only screen and (max-width: 56.25em) {
+    display: none;
+  }
 `
 
 export const Menu = styled.div`

@@ -29,7 +29,12 @@ export const FooterContainer = styled(Container)`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 8rem 0;
+  padding: 8rem 3rem;
+
+  @media only screen and (max-width: 56.25em) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const ItemsContainer = styled.div`
@@ -37,6 +42,11 @@ export const ItemsContainer = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (max-width: 56.25em) {
+    align-items: center;
+    margin: 3rem 0;
+  }
 `
 
 export const SocialIcons = styled.div`

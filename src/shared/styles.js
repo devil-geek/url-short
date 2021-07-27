@@ -14,6 +14,18 @@ export const globalStyles = css`
   html {
     /* this defines 1rem is */
     font-size: 62.5%;
+
+    @media only screen and (max-width: 75em) {
+      font-size: 54%;
+    }
+
+    @media only screen and (max-width: 56.25em) {
+      font-size: 50%;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 45%;
+    }
   }
 
   body {
@@ -30,12 +42,18 @@ export const globalStyles = css`
   h5 {
     color: hsl(260, 8%, 14%);
   }
+
+  a {
+    text-decoration: none;
+  }
 `
 
 export const Container = styled.div`
   width: 100%;
   max-width: 144rem;
   margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
 `
 
 export const Button = styled.button`

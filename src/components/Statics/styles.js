@@ -32,6 +32,19 @@ export const CardContainer = styled.div`
   div:nth-of-type(5) {
     margin-top: 15rem;
   }
+
+  @media only screen and (max-width: 56.25em) {
+    flex-direction: column;
+    div:nth-of-type(1) {
+      margin-top: 0;
+    }
+    div:nth-of-type(3) {
+      margin-top: 5rem;
+    }
+    div:nth-of-type(5) {
+      margin-top: 5rem;
+    }
+  }
 `
 
 export const StyledCard = styled.div`
@@ -42,6 +55,10 @@ export const StyledCard = styled.div`
   color: hsl(257, 7%, 63%);
   position: relative;
   height: 31rem;
+  @media only screen and (max-width: 56.25em) {
+    max-width: 90%;
+    text-align: center;
+  }
 `
 
 export const CardTitle = styled.h5`
@@ -60,10 +77,18 @@ export const CardIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: 56.25em) {
+    left: calc(50% - 5rem);
+    top: -5rem;
+  }
 `
 
 export const Line = styled.div`
   background: hsl(180, 66%, 49%);
   width: 4%;
   height: 0.9rem;
+  @media only screen and (max-width: 56.25em) {
+    height: 5rem;
+    width: 2%;
+  }
 `

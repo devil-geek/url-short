@@ -30,7 +30,7 @@ const Shortener = () => {
       setShortenLinks([...shortenLinks, responseData.result])
       setUrl("")
     }
-  }, [url])
+  }, [url, shortenLinks])
 
   const _onChange = useCallback((e) => {
     setError("")

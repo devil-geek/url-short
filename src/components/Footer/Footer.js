@@ -19,25 +19,25 @@ const Footer = () => {
         />
         <ItemsContainer>
           <h5>Features</h5>
-          <Link>Link Shortening</Link>
-          <Link>Branded Links</Link>
-          <Link>Analytics</Link>
+          <Link to="/">Link Shortening</Link>
+          <Link to="/">Branded Links</Link>
+          <Link to="/">Analytics</Link>
         </ItemsContainer>
         <ItemsContainer>
           <h5>Resources</h5>
-          <Link>Blog</Link>
-          <Link>Developers</Link>
-          <Link>Support</Link>
+          <Link to="/">Blog</Link>
+          <Link to="/">Developers</Link>
+          <Link to="/">Support</Link>
         </ItemsContainer>
         <ItemsContainer>
           <h5>Company</h5>
-          <Link>About</Link>
-          <Link>Our Team</Link>
-          <Link>Careers</Link>
-          <Link>Contact</Link>
+          <Link to="/">About</Link>
+          <Link to="/">Our Team</Link>
+          <Link to="/">Careers</Link>
+          <Link to="/">Contact</Link>
         </ItemsContainer>
         <SocialIcons>
-          <Link>
+          <Link to="/">
             <StaticImage
               className="icon"
               src="../../images/icon-facebook.svg"
@@ -45,7 +45,7 @@ const Footer = () => {
             />
           </Link>
 
-          <Link>
+          <Link to="/">
             <StaticImage
               className="icon"
               src="../../images/icon-twitter.svg"
@@ -53,14 +53,14 @@ const Footer = () => {
             />
           </Link>
 
-          <Link>
+          <Link to="/">
             <StaticImage
               className="icon"
               src="../../images/icon-pinterest.svg"
               alt="pinterest"
             />
           </Link>
-          <Link>
+          <Link to="/">
             <StaticImage
               className="icon"
               src="../../images/icon-instagram.svg"

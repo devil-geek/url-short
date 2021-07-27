@@ -18,6 +18,7 @@ const ShortenLink = ({ shorten }) => {
   return (
     <ShortLinkContainer key={shorten.code}>
       <OriginalLink>{shorten.original_link}</OriginalLink>
+      <hr />
       <ShortLink>{shorten.full_short_link}</ShortLink>
       <CopyButton disabled={copied} onClick={copyLink}>
         {copied ? "Copied!" : "Copy"}
