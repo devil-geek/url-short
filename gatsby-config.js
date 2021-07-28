@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.car-oc.com",
     title: "url-short",
   },
   plugins: [
@@ -19,5 +19,19 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Shortly",
+        short_name: "Shortly",
+        start_url: "/",
+        background_color: "hsl(0, 0%, 75%)",
+        theme_color: "hsl(257, 27%, 26%)",
+        display: "standalone",
+        icon: "./src/images/favicon-32x32.png",
+        lang: "en",
+        description: "More than just shorter links",
+      },
+    },
   ],
-};
+}
