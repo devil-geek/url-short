@@ -41,7 +41,7 @@ export const HeroMobile = styled.div`
 
   @media only screen and (max-width: 56.25em) {
     display: block;
-    margin: 5rem auto;
+    margin: 9rem auto 5rem;
     .hero-img {
       right: -10rem;
     }
