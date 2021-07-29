@@ -16,7 +16,7 @@ const ShortenLink = ({ shorten }) => {
   }
 
   return (
-    <ShortLinkContainer key={shorten.code}>
+    <ShortLinkContainer>
       <OriginalLink>{shorten.original_link}</OriginalLink>
       <hr />
       <ShortLink>{shorten.full_short_link}</ShortLink>

@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react"
+import React, { useCallback, useEffect, useState } from "react"
 import { Container } from "../../shared/styles"
 import ShortenLink from "./ShortenLink"
 import {
@@ -8,6 +8,8 @@ import {
   ShortenerWrapper,
   StyledError,
 } from "./styles"
+
+const STORE_KEY = "shortly"
 
 const Shortener = () => {
   const [url, setUrl] = useState("")
@@ -27,14 +29,22 @@ const Shortener = () => {
     if (!responseData.ok) {
       setError(responseData.error)
     } else {
-      setShortenLinks([...shortenLinks, responseData.result])
+      const newShortenLinks = [responseData.result, ...shortenLinks.slice(0, 2)]
+      setShortenLinks(newShortenLinks)
       setUrl("")
+      localStorage.setItem(STORE_KEY, JSON.stringify(newShortenLinks))
     }
   }, [url, shortenLinks])
 
   const _onChange = useCallback((e) => {
     setError("")
     setUrl(e.target.value)
+  }, [])
+
+  useEffect(() => {
+    if (localStorage.getItem(STORE_KEY)) {
+      setShortenLinks(JSON.parse(localStorage.getItem(STORE_KEY)))
+    }
   }, [])
 
   return (
@@ -59,7 +69,7 @@ const Shortener = () => {
         </StyledShortener>
 
         {shortenLinks?.map((shorten) => {
-          return <ShortenLink shorten={shorten} />
+          return <ShortenLink key={shorten.code} shorten={shorten} />
         })}
       </Container>
     </ShortenerWrapper>
