@@ -56,6 +56,7 @@ const Shortener = () => {
             value={url}
             onChange={_onChange}
             error={error}
+            readOnly={loading}
           />
           <StyledError>{error}</StyledError>
           <RectButton
